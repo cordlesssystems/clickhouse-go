@@ -93,7 +93,7 @@ func (o *stdConnOpener) Connect(ctx context.Context) (_ driver.Conn, err error) 
 }
 
 func init() {
-	sql.Register("clickhouse", &stdDriver{})
+	sql.Register("clickhouse2", &stdDriver{})
 }
 
 func OpenDB(opt *Options) *sql.DB {
